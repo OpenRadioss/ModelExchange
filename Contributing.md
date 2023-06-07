@@ -35,9 +35,9 @@ GitHub has a limitation on file size of 50 MB. If  model or components are bigge
         RHEL / CentOS   : yum install git
         Ubuntu / Debian : atp-get install git
         
-  * On Windows : Installation package can be found on Git Web site. The package come with some usefull tools like ssh
+  * On Windows : Installation package can be found on Git Web site. The package come with some useful tools like ssh
   
-         Download and install the package with yout browser
+         Download and install the package with your browser
          [https://git-scm.com/download/win](https://git-scm.com/download/win)
          
     Git will be available in command line shells : cmd.exe or Linux terminal
@@ -58,13 +58,13 @@ GitHub has a limitation on file size of 50 MB. If  model or components are bigge
     * In your GitHub page : Select your ModelExchange Fork :  "<> Code"
     * Select "Update Fork"
 
-* On your local machine : you can clone your fork to access to the Model : In a shell terminal / Linux or cmd.exe / Windows
+* On your local machine : you can clone your fork to access the ModelExchange Repository : In a shell terminal / Linux or cmd.exe / Windows
 
         git clone git@github.com:[GitHub Account login]/ModelExchange
 
 * Link your Fork with the Official Repository "Upstream"
 
-        * Enter in ModelExchange directory
+        * Enter your ModelExchange directory
         * Type : git remote add upstream git@github.com:OpenRadioss/ModelExchange.git
 
 ## To add or Modify a Model in the repository
@@ -101,15 +101,11 @@ Following tasks must be done:
        * `git add <filename>` to mark files as resolved (do not commit)
        * `git rebase --continue`  
  
-6. If GitHub ModelExchange repository is more recent than your main, you need to rebase your development branch with upstream.
+6. Upload your changes to GitHub
 
-       git rebase upstream main
+        git push -f origin [dev Branch] 
 
-7. upload them on GitHub
-
-        git push -f origin main 
-
-* On GitHub Web, create a "Pull Request" with your branch and commit to bring your changes into the main repository
+* On GitHub Web, create a "Pull Request" from your branch to bring your changes into the main repository
 
 
 ## Acceptance of Pull Request
