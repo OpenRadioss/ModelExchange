@@ -4,7 +4,7 @@ The topic of this study concerns quasi-static load treatment of dummy settling u
 
 Figure 1 shows the model set-up.
 
-![image](/Examples/Dummy_Settling/Images/Picture1.png)
+![image](/Safety/Dummy_Settling/Images/Picture1.png)
 <figcaption align = "center"><b>Figure 1. Model set-up</b></figcaption>
 
 # Options and Keywords used
@@ -29,26 +29,26 @@ The model consists of two subsets:
 •	a dummy with only the external surface defined as a rigid body.  
 •	a seat comprised of six parts (foam seat back, foam seat cushion, seat back brace, seat bottom brace, seat legs and the floor).
 
-![image](/Examples/Dummy_Settling/Images/Picture2.png)
+![image](/Safety/Dummy_Settling/Images/Picture2.png)
 <figcaption align = "center"><b>Figure 2. Left: Model mesh (perspective view - shaded display); Right: model mesh (profile view - edges display).</b></figcaption><br/><br/>  
 
 The goal is to settle the dummy on the seat using a quasi-static approach to obtain static equilibrium.  
 For this exercise, the dummy’s limbs are already positioned at the desired position before the gravity load is applied. 
 
-![image](/Examples/Dummy_Settling/Images/Picture3.png)
+![image](/Safety/Dummy_Settling/Images/Picture3.png)
 <figcaption align = "center"><b>Figure 3. Setup of the Rigid Bodies.</b></figcaption><br/><br/>  
 
 The seat structure and the floor are defined in a rigid body. Only the seat cushion parts are deformable during simulation.
 The main node coordinates, and skew are extracted from the pelvis part of the dummy rigid body.
 Gravity is applied to all nodes of the model. A function defines gravity acceleration in the Z- direction versus time. The gravity is activated by using the /GRAV keyword in the starter file (*_0000.rad).
 
-![image](/Examples/Dummy_Settling/Images/Picture4.png)
+![image](/Safety/Dummy_Settling/Images/Picture4.png)
 <figcaption align = "center"><b>Figure 4. Input gravity function (-9810 mm/s-2) at selected nodes (yellow).</b></figcaption><br/><br/>
 
 The main node of the seat and floor rigid body is clamped. 
 The main node of the dummy model rigid body is free to translate along X and Z axis and rotate around Y axis.
 
-![image](/Examples/Dummy_Settling/Images/Picture5.png)
+![image](/Safety/Dummy_Settling/Images/Picture5.png)
 <figcaption align = "center"><b>Figure 5. Boundary conditions on the rigid bodies’ main nodes. </b></figcaption><br/><br/>
 
 # Material properties
@@ -92,7 +92,7 @@ The seat legs have the following characteristics:
 •	Dummy parts define the Main surface, Seat foams define the Secondary nodes (symmetrical contact)  
 •	The floor defines the Main surface, dummy feet define the Secondary nodes  
 
-![image](/Examples/Dummy_Settling/Images/Picture6.png)
+![image](/Safety/Dummy_Settling/Images/Picture6.png)
 <figcaption align = "center"><b>Figure 6. Contacts Modeling with TYPE7 Symmetrical Interface and foot-floor interface </b></figcaption><br/><br/>
 
 The contact interfaces use the following parameters:  
@@ -119,9 +119,9 @@ Detailed information about the different formulations are available in the Theor
 
 # Results
 
-Curves and Animations
-![image](/Examples/Dummy_Settling/Images/Picture7.png)
-<figcaption align = "center"><b>Figure 7. In Figure 7, the results of displacement in Z- direction of the dummy. </b></figcaption><br/><br/>
+Curves and Animations  
+![image](/Safety/Dummy_Settling/Images/Picture7.png)
+<figcaption align = "center"><b>Figure 7. the results of displacement in Z- direction of the dummy. </b></figcaption><br/><br/>
 
 # Conclusion
 
