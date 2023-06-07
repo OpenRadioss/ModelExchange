@@ -55,19 +55,19 @@ The main node of the dummy model rigid body is free to translate along X and Z a
 
 Material for seat support - both the legs and the floor are made of steel with the following properties (/MAT/LAW1):  
 •	E (Young’s modulus): 210000 MPa  
-•	nu (Poisson’s ratio): 0.3  
-•	RhoI (Density): 7.8E-9 ton/mm³  
+•	$\nu$ (Poisson’s ratio): 0.3  
+•	$\rho$ I (Density): 7.8E-9 ton/mm³  
 
 The seat cushion is made of foam which can be described using the hyperfoam model (/MAT/LAW62).  
-•	RhoI (Density): 7.8E-9 ton/mm³  
-•	nu (Poisson’s ratio): 0 (foam behavior)  
-•	muI , alphaI (ground shear modulus): (.02,2) ,(0.01,-2)  
+•	$\rho$ I (Density): 7.8E-9 ton/mm³  
+•	$\nu$ (Poisson’s ratio): 0 (foam behavior)  
+•	$\mu$ I , $\alpha$ I (ground shear modulus): (.02,2) ,(0.01,-2)  
 
 The dummy model parts are void material (/MAT/VOID).  
 The material properties are used to compute the contact stiffness only:  
 •	E (Young’s modulus): 2070 MPa  
-•	nu (Poisson’s ratio): 0.28  
-•	RhoI (Density): 5E-11 ton/mm³  
+•	$\nu$ (Poisson’s ratio): 0.28  
+•	$\rho$ I (Density): 5E-11 ton/mm³  
 
 # Element properties
 
