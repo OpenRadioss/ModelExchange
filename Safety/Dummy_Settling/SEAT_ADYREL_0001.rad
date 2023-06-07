@@ -1,0 +1,38 @@
+# ENGINE OPTIONS
+# 
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+# Dummy on Seat with Automatic Dynamic Relaxation ("Model")
+# Copyright (C) 2023 Altair Engineering Inc. ("Holder")
+# Model is licensed by Holder under CC BY-NC 4.0
+# (https://creativecommons.org/licenses/by-nc/4.0/legalcode).  
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/TITLE
+Dummy settling using automatic dynamic relaxation
+# Termination Time
+/RUN/SEAT_ADYREL/1
+1.5
+# Time History file (T01) Output interval
+/TFILE
+1e-03
+# Print frequency for .out file and stdout
+/PRINT/-500
+# Animation file output interval
+/ANIM/DT 
+0 0.025
+# Animation file results requests
+/ANIM/ELEM/EPSP
+/ANIM/VECT/CONT
+/ANIM/VECT/FOPT
+/ANIM/NODA/DMAS
+/ANIM/MASS 
+/ANIM/ELEM/ENER
+/ANIM/ELEM/EPSP
+/ANIM/ELEM/VONM
+/ANIM/VECT/VEL
+# Nodal timestep control
+/DT/NODA/CST
+0 1E-05
+# Automatic dynamic relaxation
+/ADYREL
+#
+
