@@ -15,8 +15,8 @@ Only acting as "kinetic energy container".
 
 Purpose of this model is to be have an example of only few elements, showing the stress propagetion in an explicite analysis.
 
-![image](/Materials/ElastoPlasticLaw/Law001/Shells/Stress_Wave/Images/Stress_wave.png)
+![image](Images/Stress_wave.png)
 <figcaption align = "center"><b>Figure 1. Von Mises stress [GPa] propagaion through a 1000 mm beam.</b></figcaption>
 
-![image](/Materials/ElastoPlasticLaw/Law001/Shells/Stress_Wave/Images/Stress_wave.gif)
+![image](Images/Stress_wave.gif)
 <figcaption align = "center"><b>Animation 1. Von Mises stress [GPa] propagaion through a 1000 mm beam.</b></figcaption>

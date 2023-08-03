@@ -13,5 +13,5 @@ In case of doubt, use an elasto-plastic material law, like LAW2 (Johnson-Cook mo
 Application is for parts, which do NOT undergo large stresses and strains/deformations. 
 Only acting as "kinetic energy container".
 
-![image](/Materials/ElastoPlasticLaw/Law001/Shells/Images/LAW001.png)
+![image](Images/LAW001.png)
 <figcaption align = "center"><b>Figure 1. (left) Von Mises stress (right) Force [kN] vs. Time plot /MAT/LAW1</b></figcaption>

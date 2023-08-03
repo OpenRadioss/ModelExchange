@@ -13,5 +13,5 @@ In case of doubt, use an elasto-plastic material law, like LAW2 (Johnson-Cook mo
 It contains out of 4 nodes, forming 1 shell element (10x10mm) und uniaxial-tension loading condition.
 
 
-![image](  /Materials/ElastoPlasticLaw/Law001/Shells/One_Element_Model/Images/Stress_Strain_one_element_uniax_tension.png)
+![image](Images/Stress_Strain_one_element_uniax_tension.png)
 <figcaption align = "center"><b>Figure 1. (left) Von Mises stress (upper left) and Strain (lower left) vs. Time plot /MAT/LAW1</b></figcaption>
