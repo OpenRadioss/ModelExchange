@@ -146,7 +146,7 @@ An important point to be characterized on the curve is the necking point, where 
  
 # Results
 
-* [/MAT/LAW2: Elasto-plastic Material Law using the Johnson-Cook Model](/Materials/ElastoPlasticLaw/Law002/README.md)
+* [/MAT/LAW2: Elasto-plastic Material Law using the Johnson-Cook Model](Law002/README.md)
 
 /MAT/LAW36: Elasto-plastic Material Law using a Tabulated Input Function
 
