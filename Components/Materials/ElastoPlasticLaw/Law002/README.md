@@ -4,8 +4,8 @@
 /MAT/LAW2: Elasto-plastic Material Law using the Johnson-Cook Model
 
 The stress versus plastic strain law is: (Equation 10)
-![image](/Materials/ElastoPlasticLaw/Law002/Images/equation10.png)
-![image](/Materials/ElastoPlasticLaw/Law002/Images/equation11.png)
+![image](Images/equation10.png)
+![image](Images/equation11.png)
 
 If the material parameters b and n are not available, then OpenRadioss can use /MAT/LAW2, Iflag = 1. In this case, the UTS (Ultimate tensile strength, engineering value) and engineering strain at UTS are entered. These values can often be found online, in literature or from a material supplier. OpenRadioss will then calculate the b and n parameters used in the Equation (Equation 10).
 
