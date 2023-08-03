@@ -4,7 +4,7 @@ Tensile test simulations provide a valuable means of verification and validation
 
 Examples are provided here for the characterization of steel material data for OpenRadioss using Material Laws 2 and 36 with and without strain rate dependency and introduce the concept of triaxiality when considering failure.
 
-![image](/Materials/Images/TensileTest.png)
+![image](Images/TensileTest.png)
 
 &nbsp;
 

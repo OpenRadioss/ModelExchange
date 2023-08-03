@@ -38,7 +38,7 @@ Tension is applied to an object. The standardized “dogbone" object contains a 
 
 Units: mm, ms, kg, N, GPa.
 
-![image](/Materials/ElastoPlasticLaw/Images/Tensile.png)
+![image](Images/Tensile.png)
 <figcaption align = "center"><b>Figure 1. Geometry of the Standardized Tensile Object With a Defined Cross Sectional Area</b></figcaption>
  
 
@@ -62,45 +62,45 @@ The shell properties use recommended best practice settings, except for the thic
 
 The left side of the object is fixed in all six degrees of freedom (all three translational and all three rotational DOFs). On the right side only translation in X-direction is free, all other five DOFs are fixed. An imposed velocity of -1.0 m/s in the X-direction is applied to the main node of the rigid body, shown Figure 2, whereby the elongation is increased uniformly at low speed.
 
-![image](/Materials/ElastoPlasticLaw/Images/Tensile_boundary_conditions.png)
+![image](Images/Tensile_boundary_conditions.png)
 <figcaption align = "center"><b>Figure 2. All Boundary Conditions Applied to the Tensile Model</b></figcaption>
 
 Two measurement nodes with a distance of 80 mm are chosen (Figure 3) to continuously measure the change in length Δl in the measurement section of the sample during the simulation and to obtain the strain εe on the sample.
 
 The engineering (nominal) stress is calculated as: (Equation 1)
-![image](/Materials/ElastoPlasticLaw/Images/equiation1.png)
+![image](Images/equiation1.png)
 
 &nbsp;
 
 The total engineering strain is calculated as: (Equation 2)
-![image](/Materials/ElastoPlasticLaw/Images/equation2.png)
+![image](Images/equation2.png)
 
 &nbsp;
 
-![image](/Materials/ElastoPlasticLaw/Images/figure3.png)
+![image](Images/figure3.png)
 <figcaption align = "center"><b>Figure 3. Measurement Nodes with an initial Distance of 80mm</b></figcaption>
 
 &nbsp;
 
 The true strain is computed with the relationship: (Equation 3)
-![image](/Materials/ElastoPlasticLaw/Images/equation3.png)
+![image](Images/equation3.png)
 
 
 Engineering strain and true strain; therefore, are linked together by: (Equation 4)
-![image](/Materials/ElastoPlasticLaw/Images/equation4.png)
+![image](Images/equation4.png)
 
 True stresses are measured by dividing the force with the true deformed section: (Equation 5)
-![image](/Materials/ElastoPlasticLaw/Images/equation5.png)
+![image](Images/equation5.png)
 
 Thus, to compute true stresses, the area variation must be considered. If Poisson’s coefficient is 0.5 during plastic deformation, the true area in mono-axial traction is: (Equation 6)
-![image](/Materials/ElastoPlasticLaw/Images/equation6.png)
+![image](Images/equation6.png)
 
 Thus, the relationship between true and engineering stresses is: (Equation 7)
-![image](/Materials/ElastoPlasticLaw/Images/equation7.png)
+![image](Images/equation7.png)
 
 &nbsp;
 
-![image](/Materials/ElastoPlasticLaw/Images/figure4.png)
+![image](Images/figure4.png)
 <figcaption align = "center"><b>Figure 4. Experimental Results of a Tensile Test of a DP600 Steel Object</b></figcaption>
 
 # Characterization of the Material Law
@@ -116,18 +116,18 @@ When there is no material test data available (for example, in an early design s
 The characterization will be made for /MAT/LAW2 (Johnson-Cook elasto-plastic), and /MAT/LAW36 (tabulated elasto-plastic). For each of the material laws, the yield stress and Young's modulus are determined from the curve.
 
 The plastic strain can be defined as: (Equation 8)
-![image](/Materials/ElastoPlasticLaw/Images/equation8.png)
+![image](Images/equation8.png)
 
 
 An important point to be characterized on the curve is the necking point, where the slope of the force versus the displacement curve is equal to 0, and where the following relationships apply: (Equation 9)
 
-![image](/Materials/ElastoPlasticLaw/Images/equation9.png)
+![image](Images/equation9.png)
 
 
 &nbsp;
 
 
-![image](/Materials/ElastoPlasticLaw/Images/figure5.png)
+![image](Images/figure5.png)
 <figcaption align = "center"><b>Figure 5. Tensile Test Schematic (0 - 1= elastic region; 1= yield point; 2= necking point; 3a= fracture; 3b= linear elastic relaxation)</b></figcaption>
 
 &nbsp;

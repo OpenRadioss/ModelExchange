@@ -9,20 +9,20 @@ In addition to the failure and softening parameter in this material law, an addi
 The purpose of this model is to demonstrate the accuracy of OpenRadioss until the necking point and possiblities to model the softening and failure behavior.
 
 
-![image](/Materials/ElastoPlasticLaw/Law036/Solids/Tensile_Test_cylindric_specimen/Images/Figure_1.PNG)
+![image](Images/Figure_1.PNG)
 <figcaption align = "center"><b>Figure 1. Shows the mesh, mesh-size and overall FE model.</b></figcaption>
 
 
-![image](/Materials/ElastoPlasticLaw/Law036/Solids/Tensile_Test_cylindric_specimen/Images/Figure_2.png)
+![image](Images/Figure_2.png)
 <figcaption align = "center"><b>Figure 2. Shows the model set-up compared to reality.</b></figcaption>
 
 After performing the OpenRadioss simuilation, the resultant Stress vs. Strain curve is overlayed vs. the curve obtained by the real test.
 
-![image](/Materials/ElastoPlasticLaw/Law036/Solids/Tensile_Test_cylindric_specimen/Images/Figure_3.PNG)
+![image](Images/Figure_3.PNG)
 <figcaption align = "center"><b>Figure 3. Shows the Resultant Engineering stress vs. strain curve, compared to the measure in the real test.</b></figcaption>
 
 Two different runs were provided, using OpenRadioss and the same model. Only with the modification of the damage and failure model.
 
-![image](/Materials/ElastoPlasticLaw/Law036/Solids/Tensile_Test_cylindric_specimen/Images/Figure_4.PNG)
+![image](Images/Figure_4.PNG)
 <figcaption align = "center"><b>Figure 4. Shows the results in fracture compared to reality.</b></figcaption>
 
