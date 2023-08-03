@@ -65,7 +65,7 @@ The left side of the object is fixed in all six degrees of freedom (all three tr
 ![image](Images/Tensile_boundary_conditions.png)
 <figcaption align = "center"><b>Figure 2. All Boundary Conditions Applied to the Tensile Model</b></figcaption>
 
-Two measurement nodes with a distance of 80 mm are chosen (Figure 3) to continuously measure the change in length Δl in the measurement section of the sample during the simulation and to obtain the strain εe on the sample.
+Two measurement nodes with a distance of 80 mm are chosen (Figure 3) to continuously measure the change in length ?l in the measurement section of the sample during the simulation and to obtain the strain ?e on the sample.
 
 The engineering (nominal) stress is calculated as: (Equation 1)
 ![image](Images/equiation1.png)
@@ -77,7 +77,7 @@ The total engineering strain is calculated as: (Equation 2)
 
 &nbsp;
 
-![image](Images/figure3.png)
+![image](Images/Tensile_figure3.png)
 <figcaption align = "center"><b>Figure 3. Measurement Nodes with an initial Distance of 80mm</b></figcaption>
 
 &nbsp;
@@ -162,7 +162,7 @@ Using the curve in Figure 8 as input in LAW36, the simulation results perfectly 
 Figure 9. Comparison of the Simulation Results of the Tensile Test with /MAT/LAW36 versus Test
 /FAIL/BIQUAD: Simplified Nonlinear Strain-based Failure Criteria with Linear Damage Accumulation
 
-In some elasto-plastic material models, a single plastic strain at failure can be input to model material failure. The element is deleted when the plastic strain reaches a user-defined value εpmax 
+In some elasto-plastic material models, a single plastic strain at failure can be input to model material failure. The element is deleted when the plastic strain reaches a user-defined value ?pmax 
 
 The main disadvantage of using this approach is the element is deleted when the plastic strain is reached no matter the stress state. There is no difference between failure in tension or compression. Metals usually show different strains at failure for the different states of stress. Especially in the case of compression, the failure strain is usually much higher than for tension. To overcome this limitation, /FAIL/BIQUAD is used instead of the simple maximum equivalent plastic strain that can be defined in the material input. With a few simple inputs, /FAIL/BIQUAD creates a nonlinear plastic strain at failure as a function of stress triaxality.
 /MAT/LAW2 with /FAIL/BIQUAD
