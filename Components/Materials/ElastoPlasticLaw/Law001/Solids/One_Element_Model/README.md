@@ -21,8 +21,8 @@ Model consists out of 4 hexahedron (8-noded) elements:
 2 elements of the size: 5x5 mm (tension and compression)
 
 
-![image](/Materials/ElastoPlasticLaw/Law001/Solids/One_Element_Model/Images/LAW_01_One_element.png)
+![image](Images/LAW_01_One_element.png)
 <figcaption align = "center"><b>Figure 1. (left) Von Mises stress [GPa] (right) Strain [-] /MAT/LAW1</b></figcaption>
 
-![image](/Materials/ElastoPlasticLaw/Law001/Solids/One_Element_Model/Images/Anim_LAW01.gif)
+![image](Images/Anim_LAW01.gif)
 <figcaption align = "center"><b>Animation 1. (left) Von Mises stress [GPa] (right) Strain [-] /MAT/LAW1</b></figcaption>
