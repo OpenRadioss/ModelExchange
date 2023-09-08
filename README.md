@@ -16,14 +16,14 @@ This repository is dedicated to share OpenRadioss input decks, examples and comp
 &nbsp;
 The Folder structure is as follow:
 
-### [Components](https://github.com/OlivierWienholtz/ModelExchange/tree/main/Components)
+### [Components](https://github.com/OpenRadioss/ModelExchange/tree/main/Components)
 Models for all types of components.
 
-### [Examples](https://github.com/OlivierWienholtz/ModelExchange/tree/main/Examples)
+### [Examples](https://github.com/OpenRadioss/ModelExchange/tree/main/Examples)
 Link to OpenRadioss Model Examples and Large HPC Benchmarks.  Those models are hosted on OpenRadioss web page.
 https://www.openradioss.org
 
-### [Safety](https://github.com/OlivierWienholtz/ModelExchange/tree/main/Safety)
+### [Safety](https://github.com/OpenRadioss/ModelExchange/tree/main/Safety)
 To share OpenRadioss Safety models to be included in input decks like Dummies.
 
 # How are the models licensed
