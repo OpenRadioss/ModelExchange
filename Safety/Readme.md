@@ -8,7 +8,7 @@ This folder hosts models related to Safety simulations
 
 ## OpenRadioss Community Dummies
 
-![image](Images/TheOpenRadiossDummyFamily.jpg)
+![image](images/TheOpenRadiossDummyFamily.jpg)
 
 ### [Hybrid III 05th Percentile](Hybrid_III_05th_Percentile)
 
