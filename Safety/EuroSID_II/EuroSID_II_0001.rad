@@ -1,0 +1,28 @@
+#--------------------------------------------------------------------------------------------------|
+# <EuroSID_II> ("Model")
+# Copyright (C) <2005>-<2025> Altair Engineering Inc. ("Holder")
+# Model is licensed by Holder under CC BY-NC 4.0
+# (<https://creativecommons.org/licenses/by-nc/4.0/legalcode).>
+#
+#
+#  This model was developed for kinematic assessment only. It should not be used for the evaluation
+#  of injury metrics
+#
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/ANIM/DT
+#   TSTART     TFREQ
+0.000000 2.000000
+/ANIM/MASS
+/PARITH/ON
+/PRINT/-1/55
+/RFILE
+#   NCYCLE
+100000
+/RUN/EuroSID_II/1
+               150.1
+/TFILE/4
+#            dT_HIS
+0.100000
+/TITLE
+EuroSID_II Dummy Model (kg, mm, ms)                                                                 
+/VERS/2023
