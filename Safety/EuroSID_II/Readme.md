@@ -4,7 +4,7 @@ This is the EuroSID II 50th Percentile Side impact dummy
 
 Dummy file to be included in model:
 
-      EroSID_II_0000.rad
+      EuroSID_II_0000.rad
 
 ![image](/Safety/EuroSID_II/Images/EuroSID_II.png)
 <figcaption align = "center"><b>Figure 1. EuroSID II Dummy model </b></figcaption>
