@@ -17,3 +17,5 @@ This folder hosts models related to Safety simulations
 ### [EuroSID II 50th Percentile Side impact dummy](EuroSID_II)
 
 ### [Rigid Articulated Hybrid III 95th Percentile](Hybrid_III_95th_RG_Articulated)
+
+### [SID-IIs lateral impact dummy](SID-IIS)

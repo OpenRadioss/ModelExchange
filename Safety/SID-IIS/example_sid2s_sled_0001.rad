@@ -1,0 +1,30 @@
+#--------------------------------------------------------------------------------------------------|
+# <example_sid2s_sled> ("Model")
+# Copyright (C) <2005>-<2025> Altair Engineering Inc. ("Holder")
+# Model is licensed by Holder under CC BY-NC 4.0
+# (<https://creativecommons.org/licenses/by-nc/4.0/legalcode).>
+#
+#--------------------------------------------------------------------------------------------------|
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/ANIM/DT
+#   TSTART     TFREQ
+0.000000 2.000000
+/ANIM/MASS
+/ANIM/GZIP
+/PARITH/ON
+/PRINT/-50/55
+/RFILE
+#   NCYCLE
+100000
+/RUN/example_sid2s_sled/1
+                 200
+/STOP
+# Emax Mmax Nmax NTH NANIM NERR_POSIT
+0 0 0 1 1 0
+/TFILE/0
+#            dT_HIS
+0.100000
+/TITLE
+Sled Master                                                                                         
+/VERS/2023
+/ANIM/BRICK/TENS/STRAIN/000
