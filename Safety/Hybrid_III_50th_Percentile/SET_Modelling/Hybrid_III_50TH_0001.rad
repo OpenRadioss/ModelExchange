@@ -1,0 +1,29 @@
+#--------------------------------------------------------------------------------------------------|
+# <Hybrid_III_50TH> ("Model")
+# Copyright (C) <2005>-<2025> Altair Engineering Inc. ("Holder")
+# Model is licensed by Holder under CC BY-NC 4.0
+# (<https://creativecommons.org/licenses/by-nc/4.0/legalcode).> 
+#
+#
+#  This model was developed for kinematic assessment only. 
+#  It should not be used for the evaluation of injury metrics
+#
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/TITLE
+Hybrid_III_50TH - unit syst : kg mm ms                                          
+/RUN/Hybrid_III_50TH/1/
+200.010000000000    
+/PARITH/ON
+/PRINT/-50/55        
+/VERS/2025
+/TFILE/4         
+0.100000000000000   
+/ANIM/DT
+0.000000000000000    10.0000000000000    
+/ANIM/ELEM/EPSP
+/ANIM/ELEM/ENER
+/ANIM/ELEM/VONM
+/ANIM/ELEM/HOURG
+/ANIM/MASS
+/ANIM/NODA/DT
+/ANIM/NODA/DMAS

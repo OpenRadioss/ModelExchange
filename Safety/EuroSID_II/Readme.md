@@ -6,6 +6,10 @@ Dummy file to be included in model:
 
       EuroSID_II_0000.rad
 
+With /SET modelling to use with Altair Hyperworks 2025.1 and above
+
+      SET_Modelling/EuroSID_II_0000.rad
+
 ![image](/Safety/EuroSID_II/Images/EuroSID_II.png)
 <figcaption align = "center"><b>Figure 1. EuroSID II Dummy model </b></figcaption>
 
