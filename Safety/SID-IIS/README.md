@@ -6,6 +6,10 @@ Dummy file to be included in model:
 
       SID2S_0000.rad
 
+With /SET modelling to use with Altair Hyperworks 2025.1 and above
+
+      SET_Modelling/SID2S_0000.rad
+
 ![image](/Safety/SID-IIS/Images/SID2S.png)
 <figcaption align = "center"><b>Figure 1. SID2S Dummy model </b></figcaption>
 

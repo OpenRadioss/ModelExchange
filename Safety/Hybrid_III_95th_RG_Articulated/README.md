@@ -6,6 +6,10 @@ Dummy file to be included in model:
 
       RG_Articulated_Hybrid_III_95TH_0000.rad
 
+With /SET modelling to use with Altair Hyperworks Dummy positionner 2025.1 and above
+
+      SET_Modelling/RG_Articulated_Hybrid_III_95TH_0000.rad
+
 ![image](/Safety/Hybrid_III_95th_RG_Articulated/Images/RGID_H3_95th.png)
 <figcaption align = "center"><b>Figure 1. Rigid HIII 95th percentile </b></figcaption>
 

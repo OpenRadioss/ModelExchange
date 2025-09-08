@@ -6,6 +6,10 @@ Dummy file to be included in model:
 
       Hybrid_III_05TH_0000.rad
 
+With /SET modelling to use with Altair Hyperworks 2025.1 and above
+
+      SET_Modelling/Hybrid_III_05TH_0000.rad
+
 ![image](/Safety/Hybrid_III_05th_Percentile/Images/h305.png)
 <figcaption align = "center"><b>Figure 1. HIII 05th Dummy model </b></figcaption>
 
