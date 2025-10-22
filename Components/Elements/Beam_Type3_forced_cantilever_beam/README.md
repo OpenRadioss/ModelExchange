@@ -15,3 +15,5 @@ Here the following resolutions are available:
 - 125 mm
 - 62.5 mm
 - 31.25 mm
+
+These examples can be compared to analytical solutions.
