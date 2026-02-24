@@ -1,0 +1,208 @@
+#RADIOSS STARTER
+##========================================================================================
+##
+# MIT License
+# 
+# Copyright (c) 2025 RM412
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# Suggestion : 
+# 
+# BSD 3-Clause License
+# Copyright (c) 2014
+#  D. Haeufle, M. Günther, A. Bayer, S. Schmitt
+# Copyright (c) 2017
+#  C. Kleinbach, O. Martynenko, J. Promies, D. F. B. Haeufle, J. Fehr, S. Schmitt
+# Copyright (c) 2019
+#  O. Martynenko, F. Kempter, C. Kleinbach, S. Schmitt, J. Fehr
+# Copyright (c) 2020
+#  P. Lerge, O. Martynenko, L. Nölle, S. Schmitt, I. Wochner
+# Copyright (c) 2022
+#  O. Martynenko, F. Kempter, C. Kleinbach, L. Nölle, P. Lerge, S. Schmitt, J. Fehr
+# Copyright (c) 2026
+# A. Ardisson, E. Wagnac, M.-H. Beauséjour/ÉTS
+#  Adaptation and port to OpenRadioss
+# All rights reserved.
+# Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following C # conditions are met:
+# Redistributions of source code must retain the above copyright notice,
+#  this list of conditions and the following disclaimer.
+#
+#
+# Redistributions in binary form must reproduce the above copyright notice,
+#  this list of conditions and the following disclaimer in the documentation
+#  and/or other materials provided with the distribution.
+# 
+# 
+# Neither the name of the copyright holder nor the names of its contributors
+#  may be used to endorse or promote products derived from this software
+#  without specific prior written permission.
+#
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS”
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
+##========================================================================================
+##
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/PARAMETER/GLOBAL/REAL/1
+                                                                                                    
+param1                     6.0
+##
+/BEGIN
+#Runname                                                                        
+Gunther_100g_V5                                                                 
+#   Invers      Irun
+      2022         0
+#    Input_f_unit   Input_length_unit     Input_time_unit
+                   g                  mm                  ms
+#     Work_mass_unit    Work_length_unit      Work_time_unit
+                   g                  mm                  ms
+##
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/NODE
+#  node_ID                  Xc                  Yc                  Zc
+         1                 0.0                60.0                 0.0
+         2                 0.0                 0.0                 0.0
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/SPRING/1
+#  sprg_ID  node_ID1  node_ID2                                                               skew_ID
+         1         1         2                                                                      
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/PART/1
+#part_title                                                                                         
+hill_element                                                                                        
+#  prop_ID    mat_ID                         Thick
+         2         0                             0
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+#HWCOLOR properties 260003151 10
+/PROP/USER2/2
+USER_SPRING
+#                Rho            Diameter        Contact Stif    ActOpt   SENS_ID
+               0.001                12.0                 8.0         2        17                    
+#            STIM_ID                  q0              tauq/c           betaq/eta                   k
+                 3.0              5.0E-3            1.373E-4             5.27E+4                 2.9
+#                  m   muscle len offset                Fmax              lCEopt               dWdes
+             11.3E-3                 0.0                  30                0.25                0.14
+#            nuCEdes               dWasc             nuCEasc               Arel0               Brel0 
+                 3.0                0.57                 4.0                 0.1              1.0E-3
+#               Secc                Fecc               LPEE0               nuPEE                FPEE
+                 2.0                 1.8                 0.9                 2.5                 1.0
+#           dUSEEnll              duSEEl              dFSEE0
+              0.1825               0.073                60.0                                        
+#            Damping              Param1              Param2output_MTD
+                 3.0                 0.3                0.01         1                              
+#           timestep          Activation         target_l_CE                  kp                  kd
+                 0.0                                                        0.75                   6
+#       dotlCEdelay             t_PreSim           threshold                                        
+                                                                                                    
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+##HWCOLOR solvermasses 1 6
+/ADMAS/0/1
+100g_MASS                                                                                           
+#               MASS   grnd_ID
+                 100         2
+##HMNAME LOADCOLS          1EMBEDDED                                                                
+##HWCOLOR loadcollectors 1 21
+/BCS/1
+Loads                                                                                               
+#  Tra rot   skew_ID  grnod_ID
+   111 111         0         1
+/BCS/2
+Loads      
+#FREE TRANSLATION IN Y                                                                                         
+#  Tra rot   skew_ID  grnod_ID
+   101 111         0         2
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+##HMNAME LOADCOLS          2GRAV                                                                    
+##HWCOLOR loadcollectors 2 55
+/GRAV/2
+champ_GRAV                                                                                          
+#funct_IDT       DIR   skew_ID sensor_ID  grnod_ID                      Ascale_x            Fscale_Y
+        19         Y         0         0         3                                              -1.0
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+##HWCOLOR curves 19 5
+/FUNCT/19
+#title                                                                                              
+CHMP_GRAV                                                                                           
+#                  X                   Y
+                 0.0             0.00981
+              2000.0             0.00981
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/FUNCT/1
+aa
+                 0.0                 0.0
+                10.0                 0.0
+               100.0                 0.0
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/FUNCT/2
+tauq_vs_time
+                 0.0                 0.0
+                10.0                20.0
+               100.0                20.0
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/FUNCT/3
+Activaton_Gunther                                                                                   
+#                  X                   Y
+                 0.0                 0.0
+              1399.9                 0.0
+              1400.0                 1.0
+              2499.0                 1.0
+              2500.0                 0.0
+              3000.0                 0.0
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/GRNOD/NODE/1
+#title                                                                                              
+EMBEDDED_NODE                                                                                       
+# item_ID1  item_ID2  item_ID3  item_ID4  item_ID5  item_ID6  item_ID7  item_ID8  item_ID9 item_ID10
+         1
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/GRNOD/NODE/2
+#title                                                                                              
+LOADING_NODE                                                                                        
+# item_ID1  item_ID2  item_ID3  item_ID4  item_ID5  item_ID6  item_ID7  item_ID8  item_ID9 item_ID10
+         2
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/GRNOD/NODE/3
+#title                                                                                              
+MASS_NODE                                                                                           
+# item_ID1  item_ID2  item_ID3  item_ID4  item_ID5  item_ID6  item_ID7  item_ID8  item_ID9 item_ID10
+         2
+#---1----|----2----|----3----|----4----|----5----|----6----|----7----|----8----|----9----|---10----|
+/TH/NODE/1
+#thgroup_name
+point_suivi                                                                                         
+#  var_ID1   var_ID2   var_ID3   var_ID4   var_ID5   var_ID6   var_ID7   var_ID8   var_ID9  var_ID10
+DY        V         DY        VY        
+#  node_ID   skew_ID                                         node_name
+         2         0                                                                                
+##--------------------------------------------------------------------------------------------------
+## End Of Radioss Block Deck
+##--------------------------------------------------------------------------------------------------
+/END
+
