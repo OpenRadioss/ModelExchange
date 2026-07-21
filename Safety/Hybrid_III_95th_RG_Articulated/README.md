@@ -6,7 +6,7 @@ Dummy file to be included in model:
 
       RG_Articulated_Hybrid_III_95TH_0000.rad
 
-With /SET modelling to use with Altair Hyperworks Dummy positionner 2025.1 and above
+With /SET modelling to use with Hyperworks Dummy positionner 2025.1 and above
 
       SET_Modelling/RG_Articulated_Hybrid_III_95TH_0000.rad
 
@@ -16,7 +16,7 @@ With /SET modelling to use with Altair Hyperworks Dummy positionner 2025.1 and a
 ## Recommendation
 
 This model is intended for educational and training purposes.
-This model was developed for kinematic assessment only. To predict occupant injury risk, it is recommended to use commercial version of Radioss and safety models available from Altair and his partners, please contact Altair: [https://altair.com/fe-dummy-models]( https://altair.com/fe-dummy-models).
+This model was developed for kinematic assessment only. To predict occupant injury risk, it is recommended to use commercial version of Radioss and safety models available from Siemens and his partners, please contact Siemens: [https://www.siemens.com/en-us/products/simcenter/mechanical-simulation/radioss/](https://www.siemens.com/en-us/products/simcenter/mechanical-simulation/radioss/).
 
 ## Options and Keywords used
 
